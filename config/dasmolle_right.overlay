@@ -1,0 +1,62 @@
+#include "dasmolle.dtsi"
+
+// &kscan0: kscan {
+// 	compatible = "zmk,kscan-gpio-direct";
+// 	label = "KSCAN";
+// 	input-gpios
+// 		= <&pro_micro  7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro 19 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro  1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro  3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro  4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro  5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro  8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		, <&pro_micro  9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+// 		;
+// };
+
+// kscan0 {
+//   compatible = "zmk,kscan-gpio-direct";
+//   label = "KSCAN";
+//   input-gpios = <
+//     /* Row 0 */
+//     &gpio1  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio0  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio0  8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+
+//     /* Row 1 */
+//     &gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio0  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+
+//     /* Row 2 */
+//     &gpio0  9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio1  0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+
+//     /* Row 3 */
+//     &gpio1  7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio1  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//     &gpio1  4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)
+//   >;
+// };
+
+
+&default_transform {
+	col-offset = <18>;
+};
